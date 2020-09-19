@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="411.0" prefWidth="446.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="loginform.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ImageView fitHeight="451.0" fitWidth="743.0" layoutX="-123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fond.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="144.0" layoutY="44.0" prefHeight="330.0" prefWidth="357.0" style="-fx-background-color: #3e2723;">
+         <children>
+            <Label layoutX="113.0" layoutY="34.0" prefHeight="27.0" prefWidth="132.0" text="Identifiez-vous" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="97.0" layoutY="113.0" prefHeight="25.0" prefWidth="164.0" promptText="Login" unFocusColor="WHITE" />
+            <JFXPasswordField focusColor="WHITE" labelFloat="true" layoutX="97.0" layoutY="182.0" prefHeight="25.0" prefWidth="164.0" promptText="Password" unFocusColor="WHITE" />
+            <JFXButton layoutX="145.0" layoutY="254.0" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #76ff03;" text="Valider" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
